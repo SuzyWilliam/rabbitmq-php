@@ -1,7 +1,12 @@
 
 * To list the exchanges on the server: 
     rabbitmqctl list_exchanges
-    
+
 * To list existing bindings using:
     rabbitmqctl list_bindings
-*
+
+*To start server
+    sudo service rabbitmq-server start
+
+* To open panel
+    http://localhost:15672/ -u guest -p guest
