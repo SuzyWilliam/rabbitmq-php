@@ -1,0 +1,7 @@
+
+* To list the exchanges on the server: 
+    rabbitmqctl list_exchanges
+    
+* To list existing bindings using:
+    rabbitmqctl list_bindings
+*
