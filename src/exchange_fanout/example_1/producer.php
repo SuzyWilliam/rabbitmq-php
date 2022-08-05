@@ -9,7 +9,7 @@ use PhpAmqpLib\Message\AMQPMessage;
 
 $factory = new AMQPConnectionFactory();
 $config = new AMQPConnectionConfig();
-$config->setHost('localhost');
+$config->setHost('rabbitmq');
 $config->setPort(5672);
 $config->setUser('guest');
 $config->setPassword('guest');

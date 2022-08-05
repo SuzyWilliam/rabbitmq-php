@@ -26,7 +26,7 @@ if (empty($binding_keys)) {
 }
 
 
-$connection = new AMQPStreamConnection('localhost', 5672, "guest", "guest");
+$connection = new AMQPStreamConnection('rabbitmq', 5672, "guest", "guest");
 $channel = $connection->channel();
 
 $channel->exchange_declare('chat_exchange_direct', AMQPExchangeType::DIRECT, false, true, true);

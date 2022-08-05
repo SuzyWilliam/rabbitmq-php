@@ -13,7 +13,7 @@ if (empty($headers)) {
     file_put_contents('php://stderr', "Usage: $argv[0] [header1=value1] [header2=value2]\n");
     exit(1);
 }
-$connection = new AMQPStreamConnection('localhost',5672,'guest','guest');
+$connection = new AMQPStreamConnection('rabbitmq',5672,'guest','guest');
 $channel = $connection->channel();
 
 $exchangeName = 'headers_webAppExchange';

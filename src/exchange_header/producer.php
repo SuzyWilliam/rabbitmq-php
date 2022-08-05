@@ -9,7 +9,7 @@ use PhpAmqpLib\Wire\AMQPTable;
 require_once __DIR__."/../vendor/autoload.php";
 
 
-$connection = new AMQPStreamConnection('localhost',5672,'guest','guest');
+$connection = new AMQPStreamConnection('rabbitmq',5672,'guest','guest');
 $channel = $connection->channel();
 
 $exchangeName = 'headers_webAppExchange';

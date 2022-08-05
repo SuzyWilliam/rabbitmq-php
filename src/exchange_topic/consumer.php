@@ -6,7 +6,7 @@ use PhpAmqpLib\Exchange\AMQPExchangeType;
 require_once __DIR__."/../vendor/autoload.php";
 
 
-$connection = new AMQPStreamConnection('localhost',5672,'guest','guest');
+$connection = new AMQPStreamConnection('rabbitmq',5672,'guest','guest');
 $channel = $connection->channel();
 
 list($queue_name,,) = $channel->queue_declare('',false,false,true,false);
